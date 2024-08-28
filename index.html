@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Contact form</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="imgset">
+        <img src="./assets/images/icon-success-check.svg" alt="confirmed" />
+        <h2>Message Sent!</h2>
+      </div>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </header>
+    <main>
+      <h1>Contact Us</h1>
+      <form>
+        <div class="name">
+          <div class="fn">
+            <p class="inputheaders">First Name <span>*</span></p>
+            <input type="text" class="firstname" />
+            <p class="error firstnamee">This field is required</p>
+          </div>
+          <div class="ln">
+            <p class="inputheaders">Last Name <span>*</span></p>
+            <input type="text" class="lastname" />
+            <p class="error lastnamee">This field is required</p>
+          </div>
+        </div>
+        <div class="emailsection">
+          <p class="inputheaders">Email Address <span>*</span></p>
+          <input type="text" class="email" />
+          <p class="error emaile">This field is required</p>
+          <p class="error invalidemaile">Please enter a valid email address</p>
+        </div>
+        <div class="querysection">
+          <p class="inputheaders">Query Type <span>*</span></p>
+          <div class="querysectionmain">
+            <div class="generalqueryc">
+              <input
+                type="radio"
+                id="generalquerye"
+                value="generalquery"
+                name="query-type"
+              /><label for="generalquerye">General Enquiry</label>
+            </div>
+            <div class="supportrequestc">
+              <input
+                type="radio"
+                id="supportrequeste"
+                value="supportrequest"
+                name="query-type"
+              /><label for="supportrequeste">Support Request</label>
+            </div>
+          </div>
+          <p class="error querye">Please select a query type</p>
+        </div>
+        <div class="messagesection">
+          <p class="inputheaders">Message <span>*</span></p>
+          <textarea class="message" rows="3"></textarea>
+          <p class="error messagee">This field is required</p>
+        </div>
+
+        <div class="consentsection">
+          <div class="consentstate">
+            <input type="checkbox" id="consent" class="inputheaders" />
+            <span class="checkmark"></span>
+
+            <label for="consent"
+              >I consent to being contacted by the team <span>*</span></label
+            >
+          </div>
+          <p class="error consente">
+            To submit this form, please consent to being contacted
+          </p>
+        </div>
+        <button>Submit</button>
+      </form>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.linkedin.com/in/chimi-rinzin-20178a291/"
+          >Chimi Rinzin</a
+        >.
+      </div>
+    </footer>
+  </body>
+  <script src="./index.js"></script>
+</html>
